@@ -1,5 +1,8 @@
 # Chatbot Widget testing project at Hexlet:
-[![Actions Status](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions) [![Code Coverage](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89/coverage.svg)](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89) [![Maintainability](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89/maintainability.svg)](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89)
+[![Actions Status](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions) 
+[![Code Coverage](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89/coverage.svg)](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89) 
+[![Maintainability](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89/maintainability.svg)](https://qlty.sh/gh/failler815/projects/qa-auto-engineer-javascript-project-89)
+[![CI](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/ci.yml)
 
 **Chatbot Widget** is an npm package that exports a function with chat configuration passed to it as a parameter and returns a React component that represents the UI part. Configuration determines the user's interaction with the Chatbot Widget by describing various chatbot states as the chat messages and possible transitions between them as buttons for the user to click.
 
