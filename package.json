@@ -11,7 +11,8 @@
     "build": "vite build",
     "lint": "npx eslint .",
     "preview": "vite preview",
-    "test": "npx vitest run"
+    "test": "npx vitest run --coverage",
+    "test:ci": "npx vitest run --coverage --reporter=dot"
   },
   "dependencies": {
     "@hexlet/chatbot-v2": "^0.2.4",
@@ -22,7 +23,7 @@
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
     "@eslint/js": "^9.9.0",
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.5.2",
     "@types/react": "^18.3.3",
