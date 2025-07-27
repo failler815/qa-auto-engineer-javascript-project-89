@@ -11,6 +11,7 @@ export default defineConfig({
     setupFiles: ['./vitest.setup.js'],
     css: true,
     coverage: {
+      provider: 'v8',
       reporter: ['text', 'lcov'],
       reportsDirectory: './coverage',
     },
