@@ -1,7 +1,7 @@
 # Chatbot Widget testing project at Hexlet:
 [![Actions Status](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions) 
 
-[![testProject](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/ci.yml/badge.svg)](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/ci.yml)
+[![testStatus](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/ci.yml/badge.svg)](https://github.com/failler815/qa-auto-engineer-javascript-project-89/actions/workflows/ci.yml)
 
 **Chatbot Widget** is an npm package that exports a function with chat configuration passed to it as a parameter and returns a React component that represents the UI part. Configuration determines the user's interaction with the Chatbot Widget by describing various chatbot states as the chat messages and possible transitions between them as buttons for the user to click.
 
