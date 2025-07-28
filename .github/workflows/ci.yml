@@ -4,29 +4,21 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 20.11.1
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 20.11.1
         cache: 'npm'
     - run: npm ci
     - run: npm run lint
     - run: npm test
     - name: Test & publish code coverage
-      uses: paambaati/codeclimate-action@v9.0.0
+      uses: paambaati/codeclimate-action@v6.0.0
       env:
-        CC_TEST_REPORTER_ID: ${{ secrets.QLTY_COVERAGE_TOKEN }}
-        JACOCO_SOURCE_PATH: src/main/java
+        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         coverageCommand: npm test -- --coverage
-        coverageLocation : ${{github.workspace}}/build/reports/jacoco/test/jacocoTestReport.xml:jacoco
-        debug: true

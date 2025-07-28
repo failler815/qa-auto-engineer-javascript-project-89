@@ -7,12 +7,11 @@
     "node": "20.18.1"
   },
   "scripts": {
-    "dev": "vite",
+   "dev": "vite",
     "build": "vite build",
     "lint": "npx eslint .",
     "preview": "vite preview",
-    "test": "npx vitest run",
-    "test:coverage": "npx vitest run --coverage"
+    "test": "npx vitest run"
   },
   "dependencies": {
     "@hexlet/chatbot-v2": "^0.2.4",
