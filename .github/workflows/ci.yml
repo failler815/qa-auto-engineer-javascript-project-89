@@ -1,25 +1,12 @@
-name: CI
-
-on: [push]
-
+name:  testProject
+on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js 20.11.1
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20.11.1
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run lint
-    - run: npm test
-    - name: Test & publish code coverage
-      uses: paambaati/codeclimate-action@v6.0.0
-      env:
-        CC_TEST_REPORTER_ID: ${{ secrets.QLTY_COVERAGE_TOKEN }}
-      with:
-        coverageCommand: npm test -- --coverage
-        debug: true
+      - name: checkout repo
+        uses: actions/checkout@main
+      - name: install
+        run: make install
+      - name: test
+        run: make test
